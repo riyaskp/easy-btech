@@ -66,15 +66,15 @@ $cs->registerCoreScript("jquery");
 <script type='text/javascript'>
 function getSchemes(uid)
 {
- document.getElementById("create_university").innerHTML='none';
+
 //document.write("uid").innerHTML=uid;
- //document.getElementById("create_university").innerHTML='none';
+ //document.getElementById("create_university").innerHTML='';
  if(uid==""){
  document.getElementById("scheme").innerHTML='';
  return;
  }
   
-  //alert(uid);
+ // alert(uid);
  jQuery(function($){
  
  var url=document.getElementById("url").value;
@@ -84,7 +84,7 @@ function getSchemes(uid)
 $.post(url, { uid:uid },
    function(data){
     document.getElementById("scheme").innerHTML=data; 
-	document.getElementById("scheme_link").style.display="block";
+	//document.getElementById("scheme_link").style.display="block";
 	   
    });
   

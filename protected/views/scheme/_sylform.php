@@ -18,7 +18,7 @@ echo "<option value=".''.">"."Select Scheme</option>";
 
 ?>
 <?php
-            if(!Yii::app()->user->isGuest) 
+           if(!Yii::app()->user->isGuest) 
 		       {
 			     echo CHtml::ajaxLink('create new Scheme',array('scheme/dialoge','id'=>5),array(
 				  'beforeSend'=>'js:function(){

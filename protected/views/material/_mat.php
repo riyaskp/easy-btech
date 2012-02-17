@@ -2,7 +2,7 @@
 		
 		
 		 
-		 
+		
 		 $dir=$dir1.'\\'.$id.'.pdf';
 		 if(Yii::app()->user->isGuest)
 		 {
@@ -17,7 +17,7 @@
 	          ));
 
 		 }
-		 }
+		 
 		 
 
 		

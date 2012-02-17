@@ -167,7 +167,7 @@ $.post(url, { subid:id },
 
 
 <script type='text/javascript'>
-function getQus(id)
+function getMat(id)
 { 
  
  if(id=="")
@@ -179,13 +179,13 @@ function getQus(id)
   
  jQuery(function($){
  
- var url=document.getElementById("urlqus").value;
- // alert(url); 
+ var url=document.getElementById("urlmat").value;
+ //alert(url); 
 //url+="?uid="+uid;
 
-$.post(url, { yid:id },
+$.post(url, { mid:id },
    function(data){
-  
+     
     document.getElementById("qust").innerHTML=data; 
 	    
    });

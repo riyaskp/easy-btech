@@ -2,7 +2,7 @@
 	
 echo "<div class=".'label'."><label for=".'mt'.">Materials</label></div>";
 		 
-echo "<select id=".'mt'." onchange='getQus(this.value);'>";
+echo "<select id=".'mt'." onchange='getMat(this.value);'>";
 echo "<option value=".''.">"."Select Material</option>";
 		foreach($material as $s)
 		 {
@@ -23,4 +23,4 @@ echo "<option value=".''.">"."Select Material</option>";
 
 
 
-<input type="hidden" id="urlqus" value="<?php echo $this->createUrl('year/qus'); ?> ">
+<input type="hidden" id="urlmat" value="<?php echo $this->createUrl('material/mater'); ?> ">

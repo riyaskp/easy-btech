@@ -7126,3 +7126,234 @@ REQUEST_URI=/easybtech/index.php?r=university/sylform
 in C:\wamp\www\easybtech\protected\views\university\_sylform.php (14)
 in C:\wamp\www\easybtech\protected\views\university\sylform.php (12)
 in C:\wamp\www\easybtech\protected\controllers\UniversityController.php (208)
+2012/02/17 04:49:09 [error] [exception.CException] exception 'CException' with message 'The asset "C:\wamp\www\easybtech\protected\uploads\4.pdf" to be published does not exist.' in C:\wamp\www\easybtech\framework\web\CAssetManager.php:205
+Stack trace:
+#0 C:\wamp\www\easybtech\protected\views\year\_qus.php(9): CAssetManager->publish('C:\wamp\www\eas...')
+#1 C:\wamp\www\easybtech\framework\web\CBaseController.php(119): require('C:\wamp\www\eas...')
+#2 C:\wamp\www\easybtech\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#3 C:\wamp\www\easybtech\framework\web\CController.php(866): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easybtech\protected\controllers\YearController.php(259): CController->renderPartial('_qus', Array)
+#5 C:\wamp\www\easybtech\framework\web\actions\CInlineAction.php(50): YearController->actionQus()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\easybtech\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#13 C:\wamp\www\easybtech\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('qus')
+#15 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/qus')
+#16 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#17 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#18 {main} REQUEST_URI=/easybtech/index.php?r=year/qus
+2012/02/17 04:51:28 [error] [exception.CException] exception 'CException' with message 'The asset "C:\wamp\www\easybtech\protected\uploads\4.pdf" to be published does not exist.' in C:\wamp\www\easybtech\framework\web\CAssetManager.php:205
+Stack trace:
+#0 C:\wamp\www\easybtech\protected\views\year\_qus.php(9): CAssetManager->publish('C:\wamp\www\eas...')
+#1 C:\wamp\www\easybtech\framework\web\CBaseController.php(119): require('C:\wamp\www\eas...')
+#2 C:\wamp\www\easybtech\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#3 C:\wamp\www\easybtech\framework\web\CController.php(866): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easybtech\protected\controllers\YearController.php(259): CController->renderPartial('_qus', Array)
+#5 C:\wamp\www\easybtech\framework\web\actions\CInlineAction.php(50): YearController->actionQus()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\easybtech\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#13 C:\wamp\www\easybtech\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('qus')
+#15 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/qus')
+#16 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#17 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#18 {main} REQUEST_URI=/easybtech/index.php?r=year/qus
+2012/02/17 04:55:21 [error] [exception.CException] exception 'CException' with message 'The asset "C:\wamp\www\easybtech\protected\uploads\4.pdf" to be published does not exist.' in C:\wamp\www\easybtech\framework\web\CAssetManager.php:205
+Stack trace:
+#0 C:\wamp\www\easybtech\protected\views\year\_qus.php(9): CAssetManager->publish('C:\wamp\www\eas...')
+#1 C:\wamp\www\easybtech\framework\web\CBaseController.php(119): require('C:\wamp\www\eas...')
+#2 C:\wamp\www\easybtech\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#3 C:\wamp\www\easybtech\framework\web\CController.php(866): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easybtech\protected\controllers\YearController.php(259): CController->renderPartial('_qus', Array)
+#5 C:\wamp\www\easybtech\framework\web\actions\CInlineAction.php(50): YearController->actionQus()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\easybtech\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#13 C:\wamp\www\easybtech\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('qus')
+#15 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/qus')
+#16 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#17 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#18 {main} REQUEST_URI=/easybtech/index.php?r=year/qus
+2012/02/17 05:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:05:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:18:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:20:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mater".' in C:\wamp\www\easybtech\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\CController.php(262): CController->missingAction('mater')
+#1 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('mater')
+#2 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('year/mater')
+#3 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/easybtech/index.php?r=year/mater
+2012/02/17 05:20:19 [error] [php] Undefined index: mid (C:\wamp\www\easybtech\protected\controllers\MaterialController.php:225)
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): MaterialController->runAction()
+#1 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\easybtech\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): MaterialController->filterAccessControl()
+#4 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(257): MaterialController->runActionWithFilters()
+#7 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): MaterialController->run()
+#8 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\easybtech\index.php(13): CWebApplication->run()
+REQUEST_URI=/easybtech/index.php?r=material/mater
+in C:\wamp\www\easybtech\protected\controllers\MaterialController.php (225)
+in C:\wamp\www\easybtech\index.php (13)
+2012/02/17 05:21:25 [error] [php] Undefined index: mid (C:\wamp\www\easybtech\protected\controllers\MaterialController.php:225)
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): MaterialController->runAction()
+#1 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\easybtech\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): MaterialController->filterAccessControl()
+#4 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(257): MaterialController->runActionWithFilters()
+#7 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): MaterialController->run()
+#8 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\easybtech\index.php(13): CWebApplication->run()
+REQUEST_URI=/easybtech/index.php?r=material/mater
+in C:\wamp\www\easybtech\protected\controllers\MaterialController.php (225)
+in C:\wamp\www\easybtech\index.php (13)
+2012/02/17 05:21:33 [error] [php] Undefined index: mid (C:\wamp\www\easybtech\protected\controllers\MaterialController.php:225)
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): MaterialController->runAction()
+#1 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\easybtech\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): MaterialController->filterAccessControl()
+#4 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(257): MaterialController->runActionWithFilters()
+#7 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): MaterialController->run()
+#8 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\easybtech\index.php(13): CWebApplication->run()
+REQUEST_URI=/easybtech/index.php?r=material/mater
+in C:\wamp\www\easybtech\protected\controllers\MaterialController.php (225)
+in C:\wamp\www\easybtech\index.php (13)
+2012/02/17 05:21:39 [error] [php] Undefined index: mid (C:\wamp\www\easybtech\protected\controllers\MaterialController.php:225)
+Stack trace:
+#0 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(133): MaterialController->runAction()
+#1 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\easybtech\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): MaterialController->filterAccessControl()
+#4 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\easybtech\framework\web\CController.php(257): MaterialController->runActionWithFilters()
+#7 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): MaterialController->run()
+#8 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\easybtech\index.php(13): CWebApplication->run()
+REQUEST_URI=/easybtech/index.php?r=material/mater
+in C:\wamp\www\easybtech\protected\controllers\MaterialController.php (225)
+in C:\wamp\www\easybtech\index.php (13)
+2012/02/17 05:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested scheme does not exist.' in C:\wamp\www\easybtech\protected\controllers\DepartmentController.php:18
+Stack trace:
+#0 C:\wamp\www\easybtech\protected\controllers\DepartmentController.php(32): DepartmentController->loadScheme(NULL)
+#1 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): DepartmentController->filterSchemeContext(Object(CFilterChain))
+#2 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\easybtech\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#8 C:\wamp\www\easybtech\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('create')
+#10 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('department/crea...')
+#11 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#12 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#13 {main} REQUEST_URI=/easybtech/index.php?r=department/create
+2012/02/17 05:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested scheme does not exist.' in C:\wamp\www\easybtech\protected\controllers\DepartmentController.php:18
+Stack trace:
+#0 C:\wamp\www\easybtech\protected\controllers\DepartmentController.php(32): DepartmentController->loadScheme(NULL)
+#1 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): DepartmentController->filterSchemeContext(Object(CFilterChain))
+#2 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easybtech\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\easybtech\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easybtech\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\wamp\www\easybtech\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\easybtech\framework\web\CController.php(283): CFilterChain->run()
+#8 C:\wamp\www\easybtech\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\easybtech\framework\web\CWebApplication.php(328): CController->run('create')
+#10 C:\wamp\www\easybtech\framework\web\CWebApplication.php(121): CWebApplication->runController('department/crea...')
+#11 C:\wamp\www\easybtech\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#12 C:\wamp\www\easybtech\index.php(13): CApplication->run()
+#13 {main} REQUEST_URI=/easybtech/index.php?r=department/create
