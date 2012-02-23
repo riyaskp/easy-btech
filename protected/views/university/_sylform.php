@@ -18,14 +18,14 @@ $cs->registerCoreScript("jquery");
 		<?php echo $form->error($model,'uname'); ?>
 	      
 	
-
-	      <?php 
+            <?php 
 		  //create university dialoge box
 		  
 		      if(!Yii::app()->user->isGuest) 
 		       {
 			     echo CHtml::ajaxLink('create new university',array('university/dialoge'),array(
-                  'success'=>'js:function(data){
+                  
+				  'success'=>'js:function(data){
                  $("#createUniversity").dialog("open");
                   document.getElementById("create_university").innerHTML=data;
 				  }'));
@@ -52,9 +52,7 @@ $cs->registerCoreScript("jquery");
                    }
 		        
 			 ?>
-			 
-			 
-			   
+	      
 	
 	<div id="scheme">
 	</div>
@@ -66,7 +64,6 @@ $cs->registerCoreScript("jquery");
 <script type='text/javascript'>
 function getSchemes(uid)
 {
-
 //document.write("uid").innerHTML=uid;
  //document.getElementById("create_university").innerHTML='';
  if(uid==""){
@@ -82,6 +79,7 @@ function getSchemes(uid)
 //url+="?uid="+uid;
 
 $.post(url, { uid:uid },
+
    function(data){
     document.getElementById("scheme").innerHTML=data; 
 	//document.getElementById("scheme_link").style.display="block";

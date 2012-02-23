@@ -31,6 +31,10 @@ class SchemeController extends Controller
 		 $uid=$_GET['id'];
 		 if(isset($_POST['id']))
 		 $uid=$_POST['id'];
+		 if(isset($_GET['x']))
+		 $uid=$_GET['x'];
+		 if(isset($_POST['x']))
+		 $uid=$_POST['x'];
 		 $this->loadUniversity($uid);
 		 $filterchain->run();		 
 	 }
@@ -91,7 +95,11 @@ class SchemeController extends Controller
          $this->renderPartial('_sylform',array(
 		     'uid'=>'$uid',
 			'schemes'=>$schemes,
-		)); 
+			
+		),
+		false, // whether it should print or return the buffered output
+  true // "processOutput" - false by default, this should output your JS now
+  ); 
       
 		
 	  /*echo '<pre>';
@@ -134,7 +142,10 @@ print_r ($schemes);
 		 
          $this->renderPartial('_qusform',array(
 			'schemes'=>$schemes,
-		)); 
+		),
+		false, // whether it should print or return the buffered output
+  true // "processOutput" - false by default, this should output your JS now
+  );
       }
 	  
 	  
@@ -154,7 +165,11 @@ print_r ($schemes);
 		 
          $this->renderPartial('_matform',array(
 			'schemes'=>$schemes,
-		)); 
+		),
+		false, // whether it should print or return the buffered output
+  true // "processOutput" - false by default, this should output your JS now
+  ); 
+  
       }
 	/**
 	 * Displays a particular model.
@@ -223,7 +238,11 @@ print_r ($schemes);
            Yii::app()->clientScript->scriptMap['jquery.js'] = false;
 		$this->renderPartial('/scheme/create',array(
 			'model'=>$model,
-		));
+			
+		),
+		false, // whether it should print or return the buffered output
+  true // "processOutput" - false by default, this should output your JS now
+		);
 	}
 
 	/**

@@ -18,19 +18,18 @@ echo "<option value=".''.">"."Select Scheme</option>";
 
 ?>
 <?php
-           if(!Yii::app()->user->isGuest) 
+if(!Yii::app()->user->isGuest) 
 		       {
+			   
+			   
 			     echo CHtml::ajaxLink('create new Scheme',array('scheme/dialoge','id'=>5),array(
-				  'beforeSend'=>'js:function(){
 				  
-				     alert("ok");
-					 }',
-                  'success'=>'js:function(data1){
+                  'success'=>'js:function(data){
 				   alert("ok");
                  $("#createScheme").dialog("open");
                   document.getElementById("create_scheme").innerHTML=data;
 				  }'));?>
-                  
+                  </div>
 				  <?php
 				  $this->beginWidget('zii.widgets.jui.CJuiDialog',array(
                   'id'=>'createScheme',
@@ -51,7 +50,8 @@ echo "<option value=".''.">"."Select Scheme</option>";
                 } 
 		        
 			 ?>
-
+			   
+			   
 	<div id="department">
 	</div>
 
