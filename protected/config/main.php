@@ -5,6 +5,28 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
+if(isset($_SERVER['PLATFORM']))
+  {
+    if($_SERVER['PLATFORM']=='web')
+    {
+      $db_name="easy-btech";
+      $db_user="ileen";
+      $db_host="tunnel.pagodabox.com;mysql:port=3306";
+      $db_password="pSfeE1Bj";  
+
+    }
+	}
+    else
+    {
+      
+      $db_name="easy_btech";
+      $db_user="root";
+      $db_host="localhost";
+      $db_password="";  
+
+    }
+
 return array(
 
 'theme'=>'btech',
@@ -55,12 +77,12 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=easy_btech',
+			'connectionString' => 'mysql:host='.$db_host.';dbname='.$db_name,
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => $db_user,
+			'password' => $db_password,
 			'charset' => 'utf8',
-			'tablePrefix'=>'eb_',
+             'tablePrefix'=>'eb_',
 		),
 		
 		'errorHandler'=>array(
